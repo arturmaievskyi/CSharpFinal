@@ -7,7 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="controller\" />
     <Folder Include="Views\Home\img\" />
   </ItemGroup>
 
