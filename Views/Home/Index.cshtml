@@ -1,28 +1,80 @@
-﻿@model IEnumerable<Pizza, Workers>
+﻿@model IEnumerable<Workers>
+
+@{
+    string welcom = Welcome to CrustEuphoria!
+
+};
+
+
+
 
 @RenderBody{
 
     <main>
-    @foreach (var Pizzas in Model.Pizza)
-    {
-        <div class="card" style="width: 18rem;">
-            <img src="@Pizzas.image" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">@Pizzas.Name</h5>
-                <p class="card-text">@Pizzas.price</p>
-                <button class="order">Add to order</button>
-            </div>
-        </div>
-    }
-    @foreach (var Worker in Model.Workers)
-    {
-        
-    }
 
-    <div class=".cart">
-    
-    </div>
-</main>
+        <h2>@welcom</h2>
+
+        <div class="about-Pizzeria">
+            <p>
+                At CrustEuphoria, we believe that every pizza should be a masterpiece. <br>
+                Our pizzeria combines the finest ingredients, authentic recipes, <br>
+                and a passion for perfection to deliver an unforgettable dining experience.<br>
+                Whether you're enjoying a meal with family and friends or ordering for a special occasion,<br>
+                CrustEuphoria is your destination for exceptional pizza.
+                <br>
+                <br>
+                <br>
+                <br>
+                CrustEuphoria - the name alone evokes images of pure, <br> 
+                unadulterated pizza bliss. Imagine a place where the aroma of freshly baked dough and sizzling toppings fills the air,<br> 
+                where every bite is a symphony of flavors,<br>
+                and where pizza isn't just food, it's an experience.
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                The cornerstone of any great pizza is its crust, <br>
+                and CrustEuphoria undoubtedly masters this art. <br>
+                Picture a crust that's golden brown, <br>
+                with a satisfying crunch on the outside and a soft chewy interior. <br>
+                It's the kind of crust that makes you want to savor every single piece.
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                From classic Margherita to adventurous combinations, <br>
+                CrustEuphoria's menu is a pizza lover's paradise. <br>
+                Imagine a pizza topped with juicy, vine-ripened tomatoes, creamy mozzarella,<br>
+                and a drizzle of fragrant basil oil. Or perhaps you prefer a meat lover's dream,<br>
+                piled high with pepperoni, sausage, bacon, and ground beef. Whatever your taste, <br>
+                there's a pizza at CrustEuphoria waiting to tantalize your taste buds.<br>
+
+                <br>
+                <br>
+                CrustEuphoria doesn't stop at traditional pizza.<br>
+                They experiment with bold flavor combinations, using high-quality ingredients to create truly unique pizzas. <br>
+                Imagine a pizza topped with roasted garlic, caramelized onions, and a sprinkle of goat cheese. <br>
+                Or perhaps a pizza with a spicy tomato sauce, jalapeños, and a blend of Mexican cheeses.<br>
+            </p>
+        </div>
+
+        <h2 style="text-align:center">Workers</h2>
+        @foreach (var Worker in Model.Workers)
+        {
+            <div class="card slaves" style="width: 18rem;">
+                <img src="@Worker.image" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">@Worker.Name</h5>
+                    <p class="card-text">@Worker.get</p>
+                    <p class="cart-text">@Worker.description</p>
+                </div>
+            </div>
+        }
+
+
+    </main>
 
 
 }

@@ -1,5 +1,27 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
+﻿@{
+    string story = "Our Story";
+}
+
+
+@RenderBody{
+
+
+    <main>
+        <div class="about">
+            <div classs="Story">
+                <h2>@story</h2>
+                <div class="story">
+                    <p>
+                        CrustEuphoria was born out of a love for pizza and a commitment to quality. <br>
+                        Our founders, Alex, Artur and Jamie, traveled the world to learn the secrets of great pizza-making.<br>
+                        From the traditional pizzerias of Naples to the bustling streets of New York, <br>
+                        they gathered inspiration and honed their craft. Today, CrustEuphoria stands as a testament to their dedication,<br> 
+                        offering pizzas that are both innovative and true to their roots.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+
 }

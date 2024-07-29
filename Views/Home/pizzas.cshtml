@@ -1,0 +1,17 @@
+﻿@model IEnumerable<Pizza>
+
+@RenderBody{
+    <div class="pizzas">
+    @foreach(var Pizzas in Model.Pizza)
+    {
+        <div class="card pizza" style="width: 18rem;">
+            <img src = "@Pizzas.image" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">@Pizzas.Name</h5>
+                <p class="card-text">@Pizzas.price</p>
+                <button class="order">Add to order</button>
+            </div>
+        </div>
+    }
+    </div>
+}

@@ -1,3 +1,18 @@
 ﻿body {
 
 }
+.pizzas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.pizza {
+    max-width: 25rem;
+    max-height: 30rem;
+}
+.about-Pizzeria .story
+{
+    text-align: center;
+
+}

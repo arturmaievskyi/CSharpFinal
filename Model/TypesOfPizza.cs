@@ -1,6 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using static System.Net.Mime.MediaTypeNames;
-using System.Xml.Linq;
+
 
 namespace WebApplication1.Model
 {

@@ -14,13 +14,14 @@ namespace WebApplication1.Model
             public string Descrition { get; set; } = "";
 
             public string Type { get; set; } = "";
-            public Pizza(int id, string name, int price, string img, string description)
+            public Pizza(int id, string name, int price, string img, string description, string type)
             {
                 Id = id;
                 Name = name;
                 Price = price;
                 Image = img;
                 Descrition = description;
+                Type = type;
             }
             public string PrintInfo() => $"{Id} {Name} {Price} {Image} {Descrition} ";
         }
